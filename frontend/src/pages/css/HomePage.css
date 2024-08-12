@@ -1,0 +1,86 @@
+/* Global Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    background-image: url('../../assets/bg4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* HomePage.css */
+.home-page-content {
+    text-align: center;
+    background: rgba(215, 214, 214, 0.6); /* More transparent dark background for the form */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(88, 88, 88, 0.3); /* Darker shadow for more contrast */
+    position: relative; /* Ensure the loader can be positioned relative to this container */
+    width: 100%; /* Ensure it stretches across the container */
+    max-width: 600px; /* Optional: limit the maximum width for better appearance */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Stack input and button vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 1rem; /* Space between input and button, and between button and loader */
+    position: relative; /* Ensure the loader can be positioned relative to this container */
+}
+
+input[type="file"] {
+    padding: 0.5rem;
+    border: 1px solid #444; /* Darker border color */
+    border-radius: 6px;
+    width: 100%;
+    max-width: 300px; /* Limit width for better appearance */
+    background: #333; /* Dark background color for input */
+    color: #fff; /* Light text color */
+    cursor: pointer;
+}
+
+button {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff; /* Primary color for button */
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s linear; /* Smooth linear transition */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+.error-msg {
+    color: red;
+    margin-top: 0.5rem; /* Space between button and error message */
+    font-size: 0.875rem;
+}
+
+/* Loader Styles */
+.loader {
+    position: relative; /* Position relative to the form */
+    margin-top: 1rem; /* Space between the button and the loader */
+    margin-left: auto; /* Center horizontally within the form */
+    margin-right: auto; /* Center horizontally within the form */
+    border: 8px solid rgba(0, 0, 0, 0.1); /* Light grey for background */
+    border-radius: 50%;
+    border-top: 8px solid #007bff; /* Blue color for the spinner */
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+/* Spinner Animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

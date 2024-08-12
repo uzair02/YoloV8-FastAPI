@@ -1,0 +1,69 @@
+html, body {
+    background-color: #f9f9f9;
+    margin: 0; /* Remove default margin */
+    height: 100%; /* Full height to ensure proper centering */
+}
+
+.results-page {
+    padding: 2rem; /* Padding around the content */
+    min-height: 100vh; /* Ensure it covers the viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    box-sizing: border-box; /* Ensure padding is included in the width and height */
+    margin: 0; /* Remove any margin */
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.error-msg {
+    color: red;
+    font-size: 0.875rem;
+}
+
+.results-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Space between cards */
+    width: 100%;
+    max-width: 800px; /* Maximum width for better appearance */
+    padding: 1rem; /* Ensure padding around cards */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    margin-top: 2rem; /* Add space between top of the container and page top */
+}
+
+.result-card {
+    background: #fff; /* White background for each card */
+    border-radius: 12px; /* Rounded corners for each card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    margin: 0 auto; /* Center the card horizontally */
+}
+
+.result-card h2 {
+    margin-top: 0;
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.result-card a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.result-card a:hover {
+    text-decoration: underline;
+}
+
+.result-card p {
+    margin: 0;
+    color: #555;
+    font-size: 0.875rem;
+}
