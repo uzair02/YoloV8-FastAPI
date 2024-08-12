@@ -26,7 +26,6 @@ PostgreSQL (for the database)
    
    ```windows
       cd backend
-   
 3. **Create a Virtual Environment:**
    ```bash
    python -m venv env
@@ -61,7 +60,6 @@ PostgreSQL (for the database)
    
    ```windows
    npm install
-   
 3. **Start the Frontend Development Server:**
    ```bash
    npm run dev
