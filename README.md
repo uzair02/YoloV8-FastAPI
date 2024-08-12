@@ -47,6 +47,7 @@ PostgreSQL (for the database)
   - Create a .env file in the backend directory with the necessary database credentials.
    
 7. **Start the Backend Server:**
+   
    ```bash
    uvicorn main:app --reload
 
